@@ -13,3 +13,11 @@
               0010 0100 0110
               1101 1011 1001
     */
+    
+    I solved it in 2 ways, 1 in dp, 1 in dfs. 
+    both have time complexity of O(m*n). space complexity of O(m*n)
+    
+    if you could think of any optimization, please let me know. Thank you!
+    
+    
+    
