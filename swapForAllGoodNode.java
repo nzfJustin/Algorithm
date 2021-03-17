@@ -1,4 +1,3 @@
-import java.util.*;
 /*
 Given a directed Graph with each node having exactly one outgoing edge. Good Node:
       - A node which is marked as good
@@ -21,6 +20,8 @@ Given a directed Graph with each node having exactly one outgoing edge. Good Nod
       - generate a graph based on the input, for the graph: Map<Integer, List<Integer>>graph, key is a node, value is the node that the key node point to
       - find the # of node that are bad node and points to no one 
 */
+import java.util.*;
+
 // for a node, 1 is good, 0 is bad
 class Node {
     int val;
