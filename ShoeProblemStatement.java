@@ -43,6 +43,17 @@ Since we are able to go to every room, we return true.
 
 Example 2:
 Input: [[1,3],[3,0,1],[2],[0]]
+explanation: 
+  room 0 has key for room1 and room3
+  room 1 has key for room1 and room3 and room0
+  room 2 has key for room2 
+  room 3 has key for room0 
+return false -> cannot enter room 2 
+
+approach: 
+   1. dfs.  O(M*N) time complexity
+   2. bfs.  O(M*N)
+
 */
 
 public class ShoeProblemStatement {
