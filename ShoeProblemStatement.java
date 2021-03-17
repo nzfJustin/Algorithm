@@ -1,4 +1,3 @@
-import java.util.*; 
 /**
 * Envision you are working in a shoe store. The manager comes to you with a
 * problem. One of the manufacturer's had a problem with their factory and will
@@ -15,6 +14,7 @@ import java.util.*;
 *
 *
 */
+import java.util.*; 
 
 public class ShoeProblemStatement {
 public static int getMismatchedShoes(int[] leftShoeSizes, int[] rightShoeSizes) {
