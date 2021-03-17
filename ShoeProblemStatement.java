@@ -15,46 +15,6 @@ import java.util.*;
 *
 *
 */
-/*
-There are a number of rooms with unique numbers in 0, 1, 2, ..., N-1, where N is the total number of the rooms.
-Eech room may have some keys that you can use to unlock other rooms. The keys are clearly labeled the room numbers
-that they can open.
-
-Initially, all the rooms are locked (except for room 0). You can walk back and forth between rooms freely.
-
-You are asked to develop a program to return true if and only if you can enter every room.
-
-Example 1:
-4 rooms:
-Room #: keys in the rooms
-------------------------------
-Room 0: 1
-Room 1: 2
-Room 2: 3
-Room 3:
-------------------------------
-Return: true
-Explanation:
-We start in room 0, and pick up key 1.
-We then go to room 1, and pick up key 2.
-We then go to room 2, and pick up key 3.
-We then go to room 3.
-Since we are able to go to every room, we return true.
-
-Example 2:
-Input: [[1,3],[3,0,1],[2],[0]]
-explanation: 
-  room 0 has key for room1 and room3
-  room 1 has key for room1 and room3 and room0
-  room 2 has key for room2 
-  room 3 has key for room0 
-return false -> cannot enter room 2 
-
-approach: 
-   1. dfs.  O(M*N) time complexity
-   2. bfs.  O(M*N)
-
-*/
 
 public class ShoeProblemStatement {
 public static int getMismatchedShoes(int[] leftShoeSizes, int[] rightShoeSizes) {
