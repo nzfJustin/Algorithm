@@ -1,4 +1,3 @@
-import java.util.*;
 /*There are a number of rooms with unique numbers in 0, 1, 2, ..., N-1, where N is the total number of the rooms.
 Eech room may have some keys that you can use to unlock other rooms. The keys are clearly labeled the room numbers
 that they can open.
@@ -28,6 +27,8 @@ Example 2:
 Input: [[1,3],[3,0,1],[2],[0]]
           0,     1,    2,  3
 */
+
+import java.util.*;
 
 public class Room {
     public static boolean Room(int[][]arr) {
