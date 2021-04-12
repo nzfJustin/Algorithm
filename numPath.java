@@ -17,6 +17,16 @@ if you could think of any optimization, please let me know. Thank you!
 
 import java.util.*;
 
+/*
+   dp approach:
+     dp[i][j] # of path to reach point (i, j) from start point
+     transaction function: dp[i][j] = dp[i][j-1] + dp[i-1][j-1] + dp[i+1][j-1]
+     
+     for left - right direction, it only depend on points coming from left (1 direction)
+     for up - down direction, it depenf on both points coming from up and coming from below (2 directions)
+     
+     therefore, when iterating, we need to iterate top to bottom, left to right 
+*/
 class numPath{
     public static int numOfWaysHard(int[][] matrix, int h) {
         int m = matrix.length;
@@ -30,6 +40,7 @@ class numPath{
         }
         int[][] dp = new int[m][n];
         dp[m-1][0] = 1;
+       
         for (int j = 1; j < n; j++) {
             for (int i = 0; i < m; i++) {
                 dp[i][j] +=  dp[i][j-1];
